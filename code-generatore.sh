@@ -2,7 +2,7 @@
  set -euo pipefail
  export GOPATH=/Users/vishveshv/go
 # ROOT_PACKAGE :: the package (relative to $GOPATH/src) that is the target for code generation
-export ROOT_PACKAGE="github.com/controllerBasicByTrstringer/customResource"
+export ROOT_PACKAGE="github.com/vishveshv/vishveshv-k8sCustomResource"
 # CUSTOM_RESOURCE_NAME :: the name of the custom resource that we're generating client code for
 export CUSTOM_RESOURCE_NAME="myresource"
 # CUSTOM_RESOURCE_VERSION :: the version of the resource
@@ -58,5 +58,5 @@ tree $GOPATH/src/$ROOT_PACKAGE/pkg/client
 #         └── v1
 #             ├── expansion_generated.go
 #             └── myresource.go
-# 
+#
 # 16 directories, 22 files
